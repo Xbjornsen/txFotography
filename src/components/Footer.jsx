@@ -1,22 +1,32 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin, FaMailBulk, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaMailBulk, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className="bg-slate-800 flex justify-center mt-4 fixed bottom-0 left-0 right-0 space-x-8 py-2  ">
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="mr-2">
-                <FaTwitter className="text-gray-500 hover:text-blue-500 transition duration-200  " size={24} />
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="mr-2">
-                <FaLinkedin className="text-gray-500 hover:text-blue-500 transition duration-200" size={24} />
-            </a>
-            <a href="mailto:txfotography@gmail.com" className="mr-2">
-                <FaMailBulk className="text-gray-500 hover:text-blue-500 transition duration-200" size={24} />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="mr-2">
-                <FaInstagram className="text-gray-500 hover:text-blue-500 transition duration-200" size={24} />
-            </a>
-        </div>
+<footer className="bg-secondary text-background py-8">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col md:flex-row justify-between items-center">
+                    <div className="mb-4 md:mb-0">
+                        <h2 className="text-2xl font-bold">Tx Photography</h2>
+                        <p className="text-gray-400">Capturing moments from today, creating memories for a lifetime.</p>
+                    </div>
+                    <div className="flex space-x-4">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-background hover:text-accent">
+                            <FaTwitter size={24} />
+                        </a>
+                        <a href="mailto:txfotography@gmail.com" className="text-background hover:text-accent">
+                            <FaMailBulk size={24} />
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-background hover:text-accent">
+                            <FaInstagram size={24} />
+                        </a>
+                    </div>
+                </div>
+                <div className="mt-4 text-center text-gray-400">
+                    <p>&copy; {new Date().getFullYear()} Tx Photography. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     );
 };
 
